@@ -268,7 +268,7 @@ void table1::timeoutEvent()
     }
 
     //遍历结束条件:第一行的测试位置越界
-    if(x==0&&y==Queen_num+1)
+    if((x==0&&y==Queen_num+1)||(Queen_num==1&&num==1))//Queen_num==1时y不能等于Queen_num+1特殊情况特殊处理
     {
         timer->stop();
         on_start_btn_clicked();
