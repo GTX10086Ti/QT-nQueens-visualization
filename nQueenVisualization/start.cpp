@@ -25,7 +25,7 @@ void MainWindow::on_pushButton_clicked()
     //正常输入检测
     if(Queen_num>20)
     {
-        QMessageBox::information(this,"不干！","CPU:你想累死我啊?😅\n");
+        QMessageBox::information(this,"不干","CPU:你想累死我啊?😅\n");
         ui->lineEdit->clear();
     }
     else if(Queen_num<=0)
@@ -33,7 +33,7 @@ void MainWindow::on_pushButton_clicked()
         QMessageBox::information(this,"?????????","你正常点😅\n");
         ui->lineEdit->clear();
     }
-    else if(Queen_num==1)   QMessageBox::information(this,"开摆！","不用演示了，直接告诉你只有一组解");
+    else if(Queen_num==1)   QMessageBox::information(this,"开摆","不用演示了，直接告诉你只有一组解");
     else
     {
         table1 *t1 = new table1(Queen_num);
@@ -55,7 +55,7 @@ void MainWindow::on_comboBox_currentIndexChanged(int index)
         QFile f(fileName);
         f.open(QFile::ReadOnly);
         QString n =  f.readLine();
-        if((n[0]>='0'&&n[0]<='9')||(n[1]>='0'&&n[1]<='9'))
+        if((n[0]>='0'&&n[0]<='9')||(n[1]>='0'&&n[1]<='9'))//摆烂,随便过滤一下做做样子
         {
             ui->lineEdit->setText(n);
             ui->comboBox->setCurrentIndex(0);
