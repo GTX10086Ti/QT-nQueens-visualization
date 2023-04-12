@@ -1,6 +1,5 @@
 <RCC>
     <qresource prefix="/">
-        <file>src/gz.gif</file>
         <file>src/hinata.png</file>
         <file>src/hs.jpg</file>
         <file>src/next.png</file>
@@ -11,15 +10,11 @@
         <file>src/save.png</file>
         <file>src/step.png</file>
         <file>src/tyl.jpg</file>
-        <file>src/x1.jpg</file>
         <file>src/x2.jpg</file>
-        <file>src/x3.jpg</file>
-        <file>src/x4.jpg</file>
         <file>src/Alice.jpg</file>
         <file>src/default.jpg</file>
         <file>src/lj.jpg</file>
         <file>src/xdm.jpg</file>
         <file>src/zbj.jpg</file>
-        <file>src/zbj2.jpg</file>
     </qresource>
 </RCC>
