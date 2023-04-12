@@ -33,7 +33,6 @@ void MainWindow::on_pushButton_clicked()
         QMessageBox::information(this,"?????????","你正常点😅\n");
         ui->lineEdit->clear();
     }
-    else if(Queen_num==1)   QMessageBox::information(this,"开摆","不用演示了，直接告诉你只有一组解");
     else
     {
         table1 *t1 = new table1(Queen_num);
